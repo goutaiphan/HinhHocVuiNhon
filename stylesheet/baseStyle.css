@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../font/PlayfairDisplay.ttf');
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../font/Lora.ttf')
+}
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+    font-family: Roboto, serif;
+    font-size: 17px;
+
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*:not(input) {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    width: 450px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+#title {
+    width: 95%;
+    min-width: max-content;
+    margin-bottom: 60px;
+    font-family: 'PlayfairDisplay', serif;
+    font-size: 42px;
+    text-align: center;
+    transform: scale(1.05, 1);
+}
+
+canvas {
+    display: block;
+    width: 450px;
+    height: 450px;
+    margin-bottom: 65px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#select, #input {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+select {
+    width: 48%;
+    height: 40px;
+
+    padding: 0 18px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    appearance: none;
+    background-image: url('../media/TriangleDown.png');
+    background-size: 9px;
+    background-position-x: 91%;
+    background-position-y: 54%;
+}
+
+select:hover, input:hover {
+    background-color: gainsboro;
+}
+
+input {
+    width: 48%;
+    height: 40px;
+
+    padding: 0 18px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: black;
+}
+
+#parameter {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+#parameter {
+    width: 97%;
+    margin-top: 10px;
+}
+
+#parameter div:first-child {
+    width: 47%;
+    margin-right: 23px;
+    padding-bottom: 10px;
+
+    font-family: 'PlayfairDisplay', serif;
+    font-size: 25px;
+    transform: scale(1.05, 1);
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+#parameter div:last-child {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+sup {
+    font-family: 'Lora', serif;
+    font-size: 12px;
+}
