@@ -90,10 +90,14 @@ select:hover, input:hover {
 input {
     width: 48%;
     height: 40px;
-
     padding: 0 18px;
+
+    font-family: Roboto, serif;
+    font-size: 17px;
     border: 1px solid gray;
     border-radius: 5px;
+
+    user-input: numeric;
 }
 
 ::placeholder {

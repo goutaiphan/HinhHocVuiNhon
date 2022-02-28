@@ -85,6 +85,8 @@ function createInput(type) {
 }
 
 function setInput(object) {
+    object.inputMode = 'numeric';
+
     object.onfocus = function () {
         document.body.style.pointerEvents = 'none';
         this.value = '';
