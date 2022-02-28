@@ -14,9 +14,6 @@
     border: none;
     outline: none;
 
-    font-family: Roboto, serif;
-    font-size: 17px;
-
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
@@ -75,6 +72,9 @@ select {
     padding: 0 18px;
     border: 1px solid gray;
     border-radius: 5px;
+
+    font-family: Roboto, serif;
+    font-size: 17px;
 
     appearance: none;
     background-image: url('../media/TriangleDown.png');
