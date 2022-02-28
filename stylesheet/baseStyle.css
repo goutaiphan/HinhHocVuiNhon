@@ -100,19 +100,19 @@ input {
     color: black;
 }
 
-#parameter {
+#measure {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: start;
 }
 
-#parameter {
+#measure {
     width: 97%;
     margin-top: 10px;
 }
 
-#parameter div:first-child {
+#measure div:first-child {
     width: 47%;
     margin-right: 23px;
     padding-bottom: 10px;
@@ -124,7 +124,7 @@ input {
     border-bottom: 1px solid gray;
 }
 
-#parameter div:last-child {
+#measure div:last-child {
     font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 1.7;
