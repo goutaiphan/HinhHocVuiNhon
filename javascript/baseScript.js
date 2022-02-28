@@ -24,7 +24,6 @@ drawCanvas();
 function createInput(type) {
     input.innerHTML = type === 'Hình cung tròn' ? `<input className="input">
                 <select className="input">
-                    <option disabled>Kiểu phân chia</option>
                     <option>Trọn vẹn</option>
                     <option>Một nửa</option>
                     <option>Một phần ba</option>
@@ -157,8 +156,10 @@ function getPositionArray(quantity) {
                 limitY = parseInt(children[0].value);
                 break;
         }
-        if (shapeSelect.value === 'Đoạn thẳng') positionArray.push([randomize(15, 450 - limitX - 15), randomize(15, 450 - limitY - 15)]);
-        else positionArray.push([randomize(0, 450 - limitX), randomize(0, 450 - limitY)]);
+        if (shapeSelect.value === 'Đoạn thẳng')
+            positionArray.push([randomize(15, 450 - limitX - 15), randomize(15, 450 - limitY - 15)]);
+        else
+            positionArray.push([randomize(0, 450 - limitX), randomize(0, 450 - limitY)]);
 
         positionArray = positionArray.filter(function (item, index) {
             return positionArray.indexOf(item) === index;
